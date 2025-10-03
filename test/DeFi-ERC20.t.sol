@@ -15,7 +15,7 @@ contract MockERC20 {
 
     event Transfer(address indexed from, address indexed to, uint256 value);
     event Approval(address indexed owner, address indexed spender, uint256 value);
-
+    event DepositCreated(address indexed user, address token, uint amount);
     constructor(string memory _name, string memory _symbol, uint8 _decimals, uint256 _totalSupply) {
         name = _name;
         symbol = _symbol;
